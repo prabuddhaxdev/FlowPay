@@ -14,7 +14,6 @@
         "seed": "ts-node prisma/seed.ts"
     },
     "scripts": {
-        "build": "tsc",
-        "prepare": "npm run build"
-      }
+        "build": "prisma generate && tsc"
+    }
 }

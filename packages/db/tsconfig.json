@@ -1,9 +1,14 @@
 {
-  "name": "@flowpay/typescript-config",
-  "version": "0.0.0",
-  "private": true,
-  "exports": {
-    "./base.json": "./base.json",
-    "./react-library.json": "./react-library.json"
-  }
+  "extends": "@flowpay/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": ["**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "prisma.config.ts",
+    "prisma/**"
+  ]
 }
