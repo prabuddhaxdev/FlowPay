@@ -12,7 +12,7 @@ export default function UserApp() {
         onSignin={signIn}
         onSignout={signOut}
         user={session.data?.user}
-      ></Appbar>
+      />
     </div>
   );
 }
